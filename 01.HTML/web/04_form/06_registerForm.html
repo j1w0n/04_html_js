@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06_registerForm</title>
+<link rel="stylesheet" type="text/css" href="./css/registerStyle.css"/>
+</head>
+<body>
+<form action="" name="memberForm">
+<table>
+	<tr>
+		<th class="titles" colspan ="2">가입폼</th>
+<!-- 		<th>가입폼</th> -->
+	</tr>
+	<tr>
+		
+		<td>이름*
+	    </td>
+		<td>
+<!-- 		input[type ="text" size="10] -->
+		<input type="text" size="10" />
+		</td>
+	</tr>
+	<tr>
+		<td>아이디*</td>
+		<td>
+		<input class="inputs" type="text" size="10" name="userId" />
+		</td>
+	</tr>
+	<tr>
+		<td>비밀번호*</td>
+		<td> 
+		<input type="password" size="10" name="userPass" />
+		</td>
+	</tr>
+	<tr>
+		<td>비밀번호 확인*</td>
+		<td>
+		<input type="password" size="10" name="passConfirm" />
+		</td>
+	</tr>
+	<tr>
+		<td>성별*</td>
+		<td>
+		<input type="radio" name="gender" gender="남" />남
+		<input type="radio" name="gender" gender="여" />여
+		</td>
+	</tr>
+	<tr>
+		<td>연령대*</td>
+		<td>
+		<select name="age" >
+			<option value="== 연령대를 선택==">== 연령대를 선택 ==</option>
+			<option value="10대" >10대</option>
+			<option value="20대" >20대</option>
+			<option value="30대" >30대</option>
+			<option value="40대" >40대</option>
+			<option value="50대" >50대</option>
+			<option value="60대" >60대</option>
+			<option value="70대" >70대</option>
+			<option value="80대" >80대</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>취미*</td>
+		<td>
+		<input type="checkbox" name="hobby" value="스포츠" />스포츠
+		<input type="checkbox" name="hobby" value="서핑" />서핑
+		<input type="checkbox" name="hobby" value="캠핑" />캠핑
+		<input type="checkbox" name="hobby" value="노래" />노래
+		<input type="checkbox" name="hobby" value="여행" />여행&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>이메일*</td>
+		<td>
+		<input type="text" name="email1" size="10"/> @
+		<select name="email1">
+			<option value="메일주소 선택">==메일주소 선택==</option>
+			<option value="naver.com">naver</option> 
+			<option value="daum.net">daum</option>
+			<option value="gmail.com">gmail</option>
+			<option value="nate.com">nate</option>
+			<option value="icloud.com">icloud</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>전화번호*</td>
+		<td>
+		<select name="phone1" >
+			<option value="번호 선택">== 번호 선택 ==</option>
+			<option value="031">031</option> 
+			<option value="02">02</option>
+			<option value="032">032</option>
+			<option value="041">041</option>
+			<option value="052">052</option>
+		</select>
+		<input type="text" name="phone2" size="3"/> 
+		<input type="text" name="phone3" size="3"/> 
+		</td>
+	</tr>
+	<tr>
+		<td>주소*</td>
+		<td>
+		<select name="address" >
+			<option value="주소 선택" > ==주소 선택==
+			<option value="수원" > 수원
+			<option value="남양주" > 남양주
+			<option value="포천" > 포천
+			<option value="포항" > 포항
+			<option value="서울" > 서울
+			</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td>소개말*</td>
+		<td>
+		<textarea name="intro" cols="30" rows="10"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<th colspan ="2">
+		<input type="submit" value="가입하기" />
+		<input type="reset" value="초기화" />&nbsp;&nbsp;&nbsp;
+		</th>
+<!-- 		<td></td> -->
+	</tr>
+</table>
+</form>
+
+</body>
+</html>
